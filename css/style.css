@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#div-container{
+    border: 2px solid blue;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#mainCont{
+    border: 2px solid brown;
+    flex-grow: 1;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    box-sizing: border-box;
+    width: 65vw; 
+}
+
+img{
+    display: block;
+    width: 50%;
+    height: 50%;
+    height: auto;
+}
+
+#container{
+    border: 2px solid pink;
+    position: relative;
+    margin: 2%;
+}
+
+#tituloArt{
+    border: 2px solid green;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+p{
+    border: 2px solid green;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.containerAside{
+    border: 2px solid green; 
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left: 0;
+    display: flex;
+    flex-basis: 20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+
+
+.menus {
+    background-color: blue;
+    padding: 20px;
+    margin-top: 10%;
+    width: 200PX;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+.menus:hover{
+    background-color: blueviolet;
+    
+}
+
+.menus{
+    transition: background-color 0.2s linear 0.0s;
+}
+
+@media screen and (max-width: 768px){
+    #div-container{
+        flex-direction: column;
+    }
+
+    .containerAside{
+        flex-basis: 100%;
+        align-items: flex-start;
+    }
+}
